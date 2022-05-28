@@ -1,5 +1,6 @@
-POST http://localhost:8081/project
+POST http://localhost:8080/project
 Content-Type: application/json
+Cookie: {{sessionId}}
 
 {
   "name": "SpaceX"
@@ -7,12 +8,14 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8081/project/1
+GET http://localhost:8080/project/1
+Cookie: {{sessionId}}
 
 ###
 
-POST http://localhost:8081/employee
+POST http://localhost:8080/employee
 Content-Type: application/json
+Cookie: {{sessionId}}
 
 {
   "firstName": "Katarzyna",
@@ -23,6 +26,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8081/employee
+GET http://localhost:8080/employee
+Cookie: {{sessionId}}
 
 ###
