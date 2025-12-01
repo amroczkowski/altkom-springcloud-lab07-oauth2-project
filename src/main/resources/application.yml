@@ -10,7 +10,13 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8081/auth/realms/app-realm
-
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connect-timeout: 5000
+            read-timeout: 30000
 management:
   endpoints:
     web:
@@ -19,9 +25,4 @@ management:
   endpoint:
     health:
       show-details: always
-feign:
-  client:
-    config:
-      default:
-        connect-timeout: 5000
-        read-timeout: 30000
+
