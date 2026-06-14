@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pl.altkom.springcloud.lab07.oauth2</groupId>
-	<artifactId>project-service</artifactId>
+	<artifactId>lab07-project-service</artifactId>
 	<version>1.0.0</version>
 	<name>project-service</name>
 	<description>Project Service</description>
